@@ -2,6 +2,7 @@ package com.poli.market.controller;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,8 @@ import com.poli.market.entity.Producto;
 import com.poli.market.services.IClienteService;
 import com.poli.market.services.IProductoService;
 
+
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/ventas")
 public class VentasController {
